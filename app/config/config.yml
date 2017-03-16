@@ -91,3 +91,6 @@ stof_doctrine_extensions:
     orm:
         default:
             sluggable: true
+
+vich_uploader:
+    db_driver: orm
