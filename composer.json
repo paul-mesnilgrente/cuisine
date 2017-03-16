@@ -34,7 +34,8 @@
         "knplabs/knp-menu-bundle": "^2.0",
         "craue/formflow-bundle": "~3.0@dev",
         "mopa/bootstrap-bundle": "^3.1",
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "friendsofsymfony/user-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
