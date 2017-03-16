@@ -36,7 +36,8 @@
         "mopa/bootstrap-bundle": "^3.1",
         "twbs/bootstrap": "^3.3",
         "friendsofsymfony/user-bundle": "dev-master",
-        "friendsofsymfony/jsrouting-bundle": "dev-master"
+        "friendsofsymfony/jsrouting-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
