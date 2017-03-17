@@ -1,3 +1,10 @@
-{% extends 'MopaBootstrapBundle::base.html.twig' %}
+{% extends 'MopaBootstrapBundle::base_less.html.twig' %}
 
 {% block title %}Cuisine{% endblock %}
+
+{% block head_style %}
+  {% stylesheets output="css/app.css" filter='less,cssrewrite'
+    '%kernel.root_dir%/../app/Resources/public/less/app.less' %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+  {% endstylesheets %}
+{% endblock %}
