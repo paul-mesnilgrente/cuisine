@@ -1,0 +1,6 @@
+profile:
+    show:
+        update_profile: Update profile
+        update_password: Update password
+
+security.login.forgot_password: Forgot your password?
