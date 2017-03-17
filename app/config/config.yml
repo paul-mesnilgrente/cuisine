@@ -74,6 +74,11 @@ assetic:
     use_controller: '%kernel.debug%'
     filters:
         cssrewrite: ~
+        jsqueeze: ~
+        less:
+            node: /usr/bin/node
+            node_paths: [/usr/lib/node_modules]
+            apply_to: '\.less$'
 
 mopa_bootstrap:
     form: ~
