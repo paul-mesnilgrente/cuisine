@@ -8,3 +8,18 @@
     <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
   {% endstylesheets %}
 {% endblock %}
+
+{% block navbar %}
+  {% embed '@MopaBootstrap/Navbar/navbar.html.twig' with { inverse: true, fixedTop: true } %}
+    {% block brand %}
+      <a class="navbar-brand" href="{{ path('homepage') }}">Kitchen</a>
+    {% endblock %}
+    {% block menu %}
+      {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+        {{ mopa_bootstrap_menu('AppBundle:BuilderConnected:mainMenu', {'automenu':'navbar'}) }}
+      {% else %}
+        {{ mopa_bootstrap_menu('AppBundle:BuilderNotConnected:mainMenu', {'automenu':'navbar'}) }}
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+{% endblock %}
