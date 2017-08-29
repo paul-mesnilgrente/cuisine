@@ -33,7 +33,7 @@
         "knplabs/knp-paginator-bundle": "^2.5",
         "knplabs/knp-menu-bundle": "^2.0",
         "craue/formflow-bundle": "~3.0@dev",
-        "mopa/bootstrap-bundle": "^3.1",
+        "mopa/bootstrap-bundle": "dev-master",
         "twbs/bootstrap": "^3.3",
         "friendsofsymfony/user-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "dev-master",
@@ -54,10 +54,12 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ],
         "post-install-cmd": [
-            "@symfony-scripts"
+            "@symfony-scripts",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ],
         "post-update-cmd": [
-            "@symfony-scripts"
+            "@symfony-scripts",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ]
     },
     "extra": {
